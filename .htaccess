@@ -1,0 +1,3 @@
+SetEnv  APP_ENV "development"
+#SetEnv  APP_ENV "preprod"
+#SetEnv  APP_ENV "production"
