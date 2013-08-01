@@ -18,7 +18,7 @@ Setup
 Config example
 --------------
 
-env_list.php
+**env_list.php**
 
 ```php
        Environment::configure(
@@ -33,23 +33,25 @@ env_list.php
        );
 ```
 
-.htaccess
-
+**.htaccess on your development server**
 ```bash
         SetEnv  APP_ENV "development"
-        #SetEnv  APP_ENV "preprod"
-        #SetEnv  APP_ENV "production"
 ```
 
-database.php
+**.htaccess on your production server**
+```bash
+        SetEnv  APP_ENV "production"
+```
+
+**database.php**
 ```php      
         var $development = array(
             'driver' => 'mysql',
             'persistent' => false,
-            'host' => 'host',
-            'login' => 'login_user',
-            'password' => 'pass_pass',
-            'database' => 'dbname',
+            'host' => 'dev_host',
+            'login' => 'dev_login',
+            'password' => 'dev_password',
+            'database' => 'dev_dbname',
             'prefix' => '',
             'encoding'=>'utf8'
             );
@@ -57,10 +59,10 @@ database.php
         var $production = array(
             'driver' => 'mysql',
             'persistent' => false,
-            'host' => 'host',
-            'login' => 'login_user',
-            'password' => 'pass_pass',
-            'database' => 'dbname',
+            'host' => 'prod_host',
+            'login' => 'prod_login',
+            'password' => 'prod_password',
+            'database' => 'prod_dbname',
             'prefix' => '',
             'encoding'=>'utf8'
             );
