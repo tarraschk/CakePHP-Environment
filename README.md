@@ -7,7 +7,7 @@ Based on http://www.developpez.net/forums/d834850/php/bibliotheques-frameworks/c
 and on the work of Rafael Bandeira (environment.php).
 
 Setup
-=====
+-----
 1. Put `app/Config/environment.php` in your `APP/Config/` directory.
 2. Create the `environments` folder in your `APP/Config/` directory and put `app/Config/environments/envs_list.php` inside.
 3. Edit `envs_list.php` according to your available environments. _(See example below)._
@@ -16,7 +16,7 @@ Setup
 6. You're done! You can now create your config files according to the example given in `app/Config/database.php`. _(See example below)._
 
 Config example
-==============
+--------------
 
 env_list.php
 
@@ -80,7 +80,7 @@ database.php
 ```
 
 License
-=======
+-------
 Licensed under The MIT License.
 
 Copyright (C) 2013 Maxime ALAY-EDDINE
